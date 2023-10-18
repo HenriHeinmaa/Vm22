@@ -1,3 +1,4 @@
+HEAD
 let boolean = true;
 console.log(boolean);
 boolean = false
@@ -39,11 +40,4 @@ console.log(noValue2);
 num = 1/0;
 console.log(num);
 num = -1/0;
-console.log(num)
-num = 0/0;
-console.log(num);
-num = 0 * -1;
-console.log(num);
-num = 0.1 + 0.2;
-console.log(num);
-
+console
