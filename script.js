@@ -1,42 +1,13 @@
-let num = 10;
-if(num > 10){
-    console.log('suurem');
-} else if(num == 10) {
-    console.log('võrdne')
-} else {
-    console.log('väiksem')
-}
-
-let day = new Date().getDay();
-console.log(day);
-if(day === 0){
-    console.log('Pühapäev');
-} else if(day === 1){
-    console.log('Esmaspäev');
-}
-
-switch(day){
-    case 0:
-    console.log('Pühapäev');
-     break;
-    case 1:
-    console.log('Esmaspäev');
-     break;
-    case 2:
-    console.log('Teisipäev');
-     break;
-    case 3:
-    console.log('Kolmapäev');
-     break;
-    case 4:
-    console.log('Neljapäev');
-     break;
-    case 5:
-        console.log('Reede');
-    case 6:
-    console.log('Laupäev');
-     break;
-    default:
-        console.log('weirdday');
-    
+for(let i=1;i<=200;i++){
+    let answer = '';
+    if(i%5===0){
+        answer += 'Foo';  
+    }
+     if (i%7===0){
+        answer += 'Bar';
+    } 
+     if(answer === ''){
+          answer = i;   
+    }  
+    console.log(answer);
 }
