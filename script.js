@@ -1,43 +1,42 @@
-HEAD
-let boolean = true;
-console.log(boolean);
-boolean = false
-console.log(boolean);
-boolean = true && false && true;
-console.log(boolean);
-boolean = true || false || true;
-console.log(boolean);
-boolean = !true;
-console.log(boolean);
-boolean = true && false || true && !false;
-console.log(boolean);
-num = '10';
-boolean = num > 10;
-boolean = num < 10;
-boolean = num == 10;
-boolean = num === 10; // checks type and value
-boolean = num >= 10;
-boolean = num <= 10;
-boolean = num != 10;
-boolean = num !==10; // checks type and value
-console.log(boolean);
+let num = 10;
+if(num > 10){
+    console.log('suurem');
+} else if(num == 10) {
+    console.log('võrdne')
+} else {
+    console.log('väiksem')
+}
 
-if(num == 10) {
-    console.log('võrdne kümnega');
-} else { 
-    console.log('ei ole võrdne kümnega');
-       }
+let day = new Date().getDay();
+console.log(day);
+if(day === 0){
+    console.log('Pühapäev');
+} else if(day === 1){
+    console.log('Esmaspäev');
+}
 
-console.log(Boolean(num));
-console.log(Boolean('tere'));
-console.log(Boolean(0));
-console.log(Boolean(''));
-
-let noValue = null ;
-let noValue2;
-console.log(noValue);
-console.log(noValue2);
-num = 1/0;
-console.log(num);
-num = -1/0;
-console
+switch(day){
+    case 0:
+    console.log('Pühapäev');
+     break;
+    case 1:
+    console.log('Esmaspäev');
+     break;
+    case 2:
+    console.log('Teisipäev');
+     break;
+    case 3:
+    console.log('Kolmapäev');
+     break;
+    case 4:
+    console.log('Neljapäev');
+     break;
+    case 5:
+        console.log('Reede');
+    case 6:
+    console.log('Laupäev');
+     break;
+    default:
+        console.log('weirdday');
+    
+}
