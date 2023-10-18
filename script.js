@@ -1,13 +1,11 @@
-for(let i=1;i<=200;i++){
-    let answer = '';
-    if(i%5===0){
-        answer += 'Foo';  
+for(let i=1; i<100; i++){
+    let prime = true;
+    for(let num=2;num<Math.floor(i/2);num++){
+        if(i%num===0){
+            prime = false
+        }
     }
-     if (i%7===0){
-        answer += 'Bar';
-    } 
-     if(answer === ''){
-          answer = i;   
-    }  
-    console.log(answer);
+    if(prime){
+        console.log(i);
+    }
 }
