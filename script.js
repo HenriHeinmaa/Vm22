@@ -7,13 +7,22 @@ nunjucks.configure('views', {
     express: app
 });
 
+app.use(express.urlencoded());
+
 app.get('/', function(req,res) {
-    let name = "Henri";
-    res.render('index.njk');
+    let name = req.query.name;
+    let age = req.query.age;
+    res.render('index.njk' , {name, age});
+});
+
+app.post('/answer', function(req,res) {
+    let name = req.query.name;
+    let age = req.query.age;
+    res.render('answer.njk' , {name, age});
 });
 
 app.get('/about', function(req,res) {
-    res.render('index.njk');
+    res.render('about.njk');
 });
 
 app.listen(3000);
