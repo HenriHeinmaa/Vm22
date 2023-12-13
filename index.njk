@@ -1,5 +1,5 @@
    {% extends 'partials/layout.njk' %}
-      <title>{% block title %}Home page{% endblock %}</title>
+      {% block title %}Home page{% endblock %}</title>
   {% block content %}
    {% if name && age %}
  <h1>Hello {{ name }} you are {{ age }} years old! </h1>
